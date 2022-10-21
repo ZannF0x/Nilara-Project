@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class NilaraConfig(
     @SerializedName("device_id")
-    val deviceId: Int = 202,
+    val deviceId: String,
     @SerializedName("src")
-    val src: String = "83994069703",
+    val src: String,
     @SerializedName("dst")
-    val dst: String = "83991218491"
+    val dst: String
 )

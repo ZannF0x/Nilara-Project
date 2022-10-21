@@ -25,7 +25,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.btnCallNilaraService.setOnClickListener {
-            mainViewModel.callNilaraService(NilaraConfig())
+            mainViewModel.callNilaraService(NilaraConfig(
+                deviceId = "202",
+                src = "83994069703",
+                dst = "83991218491"
+            ))
             binding.textView.text = "Carregando..."
             binding.btnCallNilaraService.visibility = View.GONE
             binding.loading.visibility = View.VISIBLE
