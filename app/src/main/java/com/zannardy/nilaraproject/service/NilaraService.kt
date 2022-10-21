@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object NilaraService {
 
-    private const val baseUrl: String = "https://sip.nilara.com.br/"
+    private const val baseUrl: String = "https://sip.nilara.com.br/api/click2Call/"
 
     fun buildRetrofit(): NilaraRetrofit {
         val interceptor = HttpLoggingInterceptor()
